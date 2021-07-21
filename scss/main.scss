@@ -1,3 +1,6 @@
+@import "variables";
+@import "utilities";
+
 // General Styles
 // CSS Reset
 * {
@@ -6,11 +9,128 @@
 }
 
 body {
-  font-family: 'Dosis', sans-serif;;
+  font-family: "Dosis", sans-serif;
   line-height: 1.5;
   background: #fff;
 }
 
 a {
   text-decoration: none;
+  color: $dark-color;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+// Redacted Fonts
+@font-face {
+  font-family: "Redacted";
+  src: url("/fonts/web/redacted-regular.eot");
+  src: url("/fonts/web/redacted-regular.woff2") format("woff2"),
+    url("/fonts/web/redacted-regular.woff") format("woff"),
+    url("/fonts/web/redacted-regular.otf") format("opentype"),
+    url("/fonts/web/redacted-regular.svg#filename") format("svg");
+}
+
+.prototype {
+  font-family: "Redacted";
+  color: #999;
+}
+
+.prototype-script {
+  font-family: "Redacted Script";
+  color: #999;
+}
+
+// Logo
+#logo {
+  width: 70px;
+  height: 70px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+// Main Navigation
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding: 1rem 1.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    // this border-bottom was added so that during the hover effect, the text won't be pushed up
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+
+    &:hover {
+      border-color: $medium-color;
+    }
+
+    &.current {
+      border-color: $main-color;
+    }
+  }
+}
+
+// Header
+#header {
+  // Header Home
+  &-home {
+    background: $bg-image no-repeat center right / cover;
+    height: 100vh;
+    color: #fff;
+    // Header Content
+    .header-content {
+      text-align: center;
+      padding-top: 20%;
+
+      h1 {
+        font-size: 4rem;
+        line-height: 1.3rem;
+        padding-bottom: 2rem;
+      }
+    }
+  }
+
+  // &-inner {
+  // }
+}
+
+// Home Sections
+#home {
+  &-a {
+    .specials {
+      margin-top: 1rem;
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .fas {
+      color: $main-color;
+      padding-bottom: 0.3rem;
+    }
+  }
 }

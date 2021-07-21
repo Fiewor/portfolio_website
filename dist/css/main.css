@@ -1,11 +1,145 @@
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden; }
+
+.btn-main, .btn-dark, .btn-light {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer; }
+
+.btn-main {
+  color: #333;
+  background-color: #37b2e2; }
+
+.btn-dark {
+  color: #333;
+  background-color: #f4f4f4; }
+
+.btn-light {
+  color: #f4f4f4;
+  background-color: #333; }
+
+button[class^="btn-"],
+a[class^="btn-"],
+a[class^="btn-"] {
+  background-color: #37b2e2; }
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem; }
+
+.text-center {
+  text-align: center; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 1rem 0; }
+
+.py-3 {
+  padding: 1rem 0; }
+
+.py-4 {
+  padding: 1rem 0; }
+
+.my-1 {
+  margin: 1rem 0; }
+
+.my-2 {
+  margin: 1rem 0; }
+
+.my-3 {
+  margin: 1rem 0; }
+
+.my-4 {
+  margin: 1rem 0; }
+
 * {
   margin: 0;
   padding: 0; }
 
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   line-height: 1.5;
   background: #fff; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #333; }
+
+ul {
+  list-style: none; }
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase; }
+
+img {
+  width: 100%; }
+
+@font-face {
+  font-family: "Redacted";
+  src: url("/fonts/web/redacted-regular.eot");
+  src: url("/fonts/web/redacted-regular.woff2") format("woff2"), url("/fonts/web/redacted-regular.woff") format("woff"), url("/fonts/web/redacted-regular.otf") format("opentype"), url("/fonts/web/redacted-regular.svg#filename") format("svg"); }
+
+.prototype {
+  font-family: "Redacted";
+  color: #999; }
+
+.prototype-script {
+  font-family: "Redacted Script";
+  color: #999; }
+
+#logo {
+  width: 70px;
+  height: 70px;
+  color: #000;
+  text-transform: uppercase; }
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem; }
+  #main-nav ul {
+    display: flex; }
+  #main-nav li {
+    padding: 1rem 1.5rem; }
+  #main-nav a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s; }
+    #main-nav a:hover {
+      border-color: #ccc; }
+    #main-nav a.current {
+      border-color: #37b2e2; }
+
+#header-home {
+  background: url("../img/showcase.jpg") no-repeat center right/cover;
+  height: 100vh;
+  color: #fff; }
+  #header-home .header-content {
+    text-align: center;
+    padding-top: 20%; }
+    #header-home .header-content h1 {
+      font-size: 4rem;
+      line-height: 1.3rem;
+      padding-bottom: 2rem; }
+
+#home-a .specials {
+  margin-top: 1rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr); }
+
+#home-a .fas {
+  color: #37b2e2;
+  padding-bottom: 0.3rem; }
