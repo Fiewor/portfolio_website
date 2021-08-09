@@ -1,3 +1,5 @@
+// utilities are things you use repeatedly across the site
+
 .container {
   max-width: $website-width;
   padding: 0 1.5rem;
@@ -80,4 +82,21 @@ a[class^="btn-"] {
   &-4 {
     margin: 1rem 0;
   }
+}
+
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: $main-color;
+  display: block;
+  margin: 0 auto 1rem auto;
 }
